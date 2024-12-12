@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-image img-fluid shadow-lg">
+        </div>
+
+        
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Tentang Saya</h2>
+            <p class="lead text-justify">Saya adalah Seorang mahasiswa Teknik Informatika yang memiliki semangat yang sangat tinggi dalam dunia perteknologian,saya ingin mengembangkan bakat saya dalam dunia teknologi karna dilihat zaman sekarang yang semakin canggih.</p>
+            
+            <p class="lead text-justify">Dengan berkembangnya zaman dibidang teknologi,saya akan terus belajar dalam mengembangkan sebuah web atau aplikasi yang saya ingin buat kedepan nya atau yang saya ingin ciptakan di masa depan nanti.</p>
+            
+            <p class="lead text-justify">Ke depannya, saya akan lebih bergiat dalam mengembangkan bakat saya di bidang web/aplikasi agar lebih banyak di kenal bagi pengguna di seluruh dunia.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .profile-image {
+        width: 100%; 
+        height: auto; 
+        max-width: 400px; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    }
+
+    h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #34495e;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+    }
+
+    
+    .col-md-4 {
+        padding-top: 70px; 
+        padding-bottom: 20px; 
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+</style>
+
+{% endblock %}

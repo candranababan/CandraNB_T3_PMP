@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center">Hobi Saya</h2>
+<p class="text-center">Berikut adalah beberapa hobi saya yang saya minati saat mengisi waktu luang</p>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/hobi1.jpg') }}" alt="Hobi 1" class="img-fluid rounded shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title">Liburan</h5>
+                    <p class="card-text">Saya sering Liburan bersama keluarga saya ketika di hari libur,contohnya saya sangat menyukai ketika liburan itu perginya ke sebuah pantai yang sangat indah.Disana saya dapat menikmati ombaknya,saya juga dapat menikmati udaranya yang sangat sejuk,dan ketika sore hari nya saya dapat menikmati nya namanya sunset.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/hobi2.jpg') }}" alt="Hobi 2" class="img-fluid rounded shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title">Bermain Futsal</h5>
+                    <p class="card-text">Saya juga hobi dalam bermain futsal,saya sering bermain dengan teman sekelas saya ketika kami telah selesai kelas,atau ada hari libur kami sempat untuk bermain futsal agar kami tidak terlalu stres memikirkan tugas kuliah yang banyak.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+     h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+</style>
+{% endblock %}

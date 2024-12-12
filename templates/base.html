@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandraNababan_223510466</title>
+    <!-- Link Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #b01c7a; 
+            --bs-primary-bg-subtle: #bc28a8; 
+            --bs-primary-border-subtle: #377734; 
+            --bs-primary-text-emphasis: #0056b3; 
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #d9dde1; 
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--bs-primary);
+            border-bottom: 1px solid var(--bs-primary-border-subtle);
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: var(--bs-primary-bg-subtle);
+        }
+
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary-border-subtle);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--bs-primary-bg-subtle);
+            border-color: var(--bs-primary);
+        }
+
+        .card {
+            border: 1px solid var(--bs-primary-border-subtle);
+            background-color: white;
+        }
+
+        .card-title {
+            color: var(--bs-primary-text-emphasis);
+        }
+
+        .footer {
+            background-color: var(--bs-primary-bg-subtle);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-white" href="/">CandraNababan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/about">Tentang Saya</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="/hobbies">Hobi</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
